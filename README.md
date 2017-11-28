@@ -6,6 +6,10 @@
 * when run, checks to see if there are more than a specified threshold of files in the trashbin. If there are gives the user options to view, delete, or ignore
 * run via crontab
 
+## homework.sh
+* clones my latex homework template
+* run via .bash_aliases
+
 ## sd-notify.sh (simple desktops notify)
 * checks to see if simple has a new desktop image. If it does, update local .sd-notify-preference so we know when a new one is there, and send notification to inform user
 * run via crontab
