@@ -1,15 +1,20 @@
-## dc.sh (downloads clear)
-* when run, checks to see if there are files in the downloads folder, if so gives user option to view, delete, or ignore
+# Installation
+move the downloaded files into `~/Scripts`, and then run
+```
+~/Scripts/install.sh
+```
+install.sh installs file-cleaner dependencies and adds the local `./bash_aliases` to the users `~/.bash_aliases`
+
+# Included Scripts
+
+## file-cleaner
+* Opens a terminal which allows for cleaning trash bin and downloads folder when files exist in them
 * run via crontab
 
-## tc.sh (trash clear)
-* when run, checks to see if there are more than a specified threshold of files in the trashbin. If there are gives the user options to view, delete, or ignore
-* run via crontab
-
-## homework.sh
+## homework
 * clones my latex homework template
 * run via .bash_aliases
 
-## sd-notify.sh (simple desktops notify)
+## sd-notify (simple desktops notify)
 * checks to see if simple has a new desktop image. If it does, update local .sd-notify-preference so we know when a new one is there, and send notification to inform user
 * run via crontab
