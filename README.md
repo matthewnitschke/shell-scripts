@@ -2,8 +2,9 @@
 move the downloaded files into `~/Scripts`, and then run
 ```
 ~/Scripts/install.sh
+source ~/.bashrc
+source ~/.bash_aliases
 ```
-install.sh installs file-cleaner dependencies and adds the local `./bash_aliases` to the users `~/.bash_aliases`
 
 # Included Scripts
 
