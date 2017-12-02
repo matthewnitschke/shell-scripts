@@ -81,7 +81,7 @@ var clearFolderActions = [
     () => {
         exec('gvfs-trash ~/Downloads/*', refreshDialogs)
     }, () => {
-        exec('gnome-terminal -e "nemo trash://"', refreshDialogs)
+        exec('rm -rf ~/.local/share/Trash/*', refreshDialogs) // "gvfs-trash --empty" wasnt working when run from cron
     }
 ]
 
