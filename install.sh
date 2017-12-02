@@ -2,8 +2,8 @@
 
 
 # install file-cleaner dependencies
-# cd file-cleaner
-# yarn install
+cd file-cleaner
+yarn install
 
 # add aliases to bash_aliases
 if [ -f ~/.bash_aliases ]; then
@@ -22,5 +22,8 @@ if [ -f ~/.bash_aliases ]; then
     source $USER_ALIASES
 fi
 
-sudo cat shell-scripts-cron > /etc/cron.d/shell-scripts-cron
+LOCAL_CRON=./shell-scripts-cron
+while read myCron; do
+    (crontab -l ; echo "$myCron") | sort - | uniq - | crontab -
+done < $LOCAL_CRON
 echo "contab updated"
