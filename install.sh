@@ -4,8 +4,6 @@
 cd file-cleaner
 yarn install
 
-
-
 # add cron to users crontab
 LOCAL_CRON=~/Scripts/shell-scripts-cron
 while read myCron; do
